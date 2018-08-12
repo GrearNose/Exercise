@@ -1,3 +1,13 @@
+"""
+Problem Description
+Give a matrix m-by-n, each element is eight
+0 or 1. Figure out there are how many connected regions
+of 1 in the matrix and the number of 1 in the maximum one.
+A connected region of 1 is a set of element of 1 adjacent
+with each other (directly or indirectly) in eight directions.
+"""
+
+
 M,N = [int(x) for x in input().split(',')]
 fans,visited = [],[]
 for i in range(M):
