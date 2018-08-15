@@ -1,0 +1,42 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# binary dirs
+jobHunting/ByteDance_2018_12/build/*
+jobHunting/ByteDance_2018_12/__pycache__/*
+jobHunting/NetEase_2018_8_11/build/*
+jobHunting/NetEase_2018_8_11/__pycache__/*
+jobHunting/Pinduoduo/build/*
+jobHunting/Pinduoduo/__pycache__/*
+LeetCode/build/*
+LeetCode/__pycache__/*
