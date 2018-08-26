@@ -46,6 +46,8 @@ def test():
     s = 'abcd'
     s = 'abcdefghjkglmn'
     s = 'abcdefghjkglmnopqrstuvwxyz'
+    s = 'abababbabababab'
+    s = 'ababaccadaf'
     for i in range(len(s)):
         str1 = s[i:] + s[:i] # positive, clockwise twin
         str2 = str1[::-1]    # positive, anti-clockwise twin
@@ -53,14 +55,11 @@ def test():
         print(s,str1,twin_str(s,str1),twin_str_v2(s,str1))
         print(s,str2,twin_str(s,str2),twin_str_v2(s,str2))
 
-        x = randint(0,len(s))
-        str1 = str1[:x]+str1[x+1:]
-        str2 = str2[:x]+str2[x+1:]
-        print(s,str1,twin_str(s,str1), twin_str_v2(s,str1))
-        print(s,str2,twin_str(s,str2), twin_str_v2(s,str2))
+        # x = randint(0,len(s))
+        # str1 = str1[:x]+str1[x+1:]
+        # str2 = str2[:x]+str2[x+1:]
+        # print(s,str1,twin_str(s,str1), twin_str_v2(s,str1))
+        # print(s,str2,twin_str(s,str2), twin_str_v2(s,str2))
 
 if __name__ == '__main__':
     test()
-
-
-
