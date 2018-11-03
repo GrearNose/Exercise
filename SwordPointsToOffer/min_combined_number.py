@@ -7,7 +7,12 @@ class Solution:
         if None == numbers or 0 == len(numbers):
             return ''
         n = [str(x) for x in numbers]
-        sc = max([len(x) for x in n])
+        sc = max([len(x) for x in n]) # to get the max length
+        # append with the first char to get keys with same length,
+        # in this way, the key of '3,32,321' are '333,323,321',
+        # sort them according to these keys, the result is '321,32,3',
+        # then concatenated together, they yield the minimum number:
+        #      321323
         n.sort(key=lambda x: x+x[0]*(sc-len(x)))
         n = ''.join(n)
         n = int(n)
